@@ -4,8 +4,9 @@
     border: 0px;
 }
 
-.navbar {
-    z-index: 2;
+body {
+    background-color: #000;
+    color: #ffffff;
 }
 
 .logo {
