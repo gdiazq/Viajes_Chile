@@ -16,7 +16,8 @@
 </head>
 <body>
     <main>
-        <section class="container-fluid px-0">
+        <!-- NavBar Viajes Chile -->
+        <section class="container-fluid px-0" id="section1">
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
                 <div class="container">
                     <a class="navbar-brand ps-3"><img src="./assets/img/viajes.svg" class="logo">Viajes Chile</a>
@@ -26,21 +27,22 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <ul class="navbar-nav ms-auto px-5 nav-list">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                <a class="nav-link active" aria-current="page" href="#section1">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Quienes Somos</a>
+                                <a class="nav-link active" href="#section2">Quienes Somos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Destacados</a>
+                                <a class="nav-link active" href="#section3">Destacados</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active">Contacto</a>
+                                <a class="nav-link active" href="#section4">Contacto</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            <!-- Coarrusel de la navbar -->
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -63,21 +65,23 @@
                 </button>
               </div>
         </section>
-        <section class="container py-3 text-center">
+
+        <!-- Cards quienes somos-->
+        <section class="container py-3 text-center d-none d-sm-block" id="section2">
             <h1 class="fs-3 text-uppercase">¿Quienes somos?</h1>
             <hr/>
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="card no-card-round border border-0 pb-3 bg-black text-white">
+                    <div class="card no-card-round border border-0 pb-3 padding-responsive bg-black text-white">
                         <a href="#" class="btn btn-info no-card-round"><i class="fa-solid fa-plane icon-cog"
                             ></i></a>
                         <p class="card-text pt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card no-card-round border border-0 pt-3 bg-black text-white">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-info no-card-round"> <i class="fa-solid fa-mountain icon-cog">
+                    <div class="card no-card-round border border-0 pt-3 padding-responsive bg-black text-white change-order">
+                        <p class="card-text second-order">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info no-card-round"> <i class="fa-solid fa-mountain icon-cog first-order">
                         </i></a>
                     </div>
                 </div>
@@ -90,40 +94,42 @@
                 </div>
             </div> 
         </section>
-        <section class="container py-3 text-center">
+
+        <!-- Cards destacados -->
+        <section class="container py-3 text-center" id="section3">
             <h2 class="fs-3 text-uppercase">Destacados</h2>
             <hr/>
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 pb-3">
                     <div class="card">
-                        <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/img/card1.jpg" class="card-img-top" alt="Imagen 1">
                         <div class="card-body bg-info text-white border-light-subtle">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 pb-3">
                     <div class="card">
-                        <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/img/card2.jpg" class="card-img-top" alt="Imagen 2">
                         <div class="card-body bg-info text-white border-light-subtle">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 pb-3">
                     <div class="card">
-                        <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/img/card3.jpg" class="card-img-top" alt="Imagen 3">
                         <div class="card-body bg-info text-white border-light-subtle">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 pb-3">
                     <div class="card">
-                        <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/img/card4.jpg" class="card-img-top" alt="Imagen 4">
                         <div class="card-body bg-info text-white border-light-subtle">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -131,7 +137,10 @@
                     </div>
                 </div>
             </div>
-        <section class="container py-3">
+        </section>
+
+        <!-- Form de contacto -->
+        <section class="container py-3" id="section4">
             <h2 class="fs-3 text-uppercase text-center">Contacto</h2>
             <hr/>
             <div class="row">
@@ -153,17 +162,20 @@
             </div>
         </section>
     </main>
-    <footer class="bg-info py-3">
+
+    <!-- Footer Viajes Chile-->
+    <footer class="bg-info py-3" id="section5">
         <div class="d-flex align-items-center justify-content-evenly">
             <p class="text-uppercase mb-0">Viajes Chile</p>
             <div>
-                <i class="fa-brands fa-google"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-square-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-square-facebook"></i>
             </div>
         </div>
     </footer>
+
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </body>
