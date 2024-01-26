@@ -31,5 +31,5 @@ const alertTrigger = document.getElementById('liveAlertBtn')
 if (alertTrigger) {
     alertTrigger.addEventListener('click', () => {
         appendAlert('El formulario ya fue enviado', 'success')
-  })
-}
+  });
+};
