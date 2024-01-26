@@ -27,6 +27,10 @@ body {
     color: white;
 }
 
+.card-height {
+    height: 12.6rem;
+}
+
 @media (max-width: 680px) {
     .width-card {
         width: 20rem;
